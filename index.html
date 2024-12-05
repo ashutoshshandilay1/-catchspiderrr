@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Spider</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Image -->
+    <div id="header-image">
+        <img src="assests/CATCH-SPIDER.png" alt="Catch Teddy Game" style="width: 100%; height: auto; border-radius: 10px;">
+    </div>
+
+    <!-- Game Title -->
+    <h1>COMPLETE 1000 SCORE TO WIN REWARDS</h1>
+    <h2 id="score">0</h2>
+    <h1 id="timer">Time Left: 30s</h1>
+    
+    <!-- Game Buttons -->
+    <button id="playButton">Play</button>
+    <button id="tryAgainButton" style="display: none;">Try Again</button>
+    <button id="claimRewardButton" style="display: none;">Claim Reward</button> <!-- Claim Reward button -->
+
+<!-- Redeem Section (Appears after Winning) -->
+<div id="redeemSection" style="display: none;">
+    <h4>Congratulations! You've won!</h4>
+    <p id="redeemCode">Here is your ₹10 redeem code: <strong id="kk">ASDF AFDF GFGF ERFF</strong></p>
+    <button id="copyButton" onclick="copyCode()">Copy Code</button>
+</div>
+
+
+    <!-- Game Board -->
+    <div id="board" style="display: none;"></div>
+</body>
+</html>
